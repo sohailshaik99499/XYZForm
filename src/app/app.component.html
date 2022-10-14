@@ -1,0 +1,82 @@
+<h1>XYZ College/School</h1>
+<h2>Student Registration Form</h2>
+<br>
+<br>
+<br>
+<div class="container">
+    <form [formGroup]="registration" (ngSubmit)="registerSubmited()" class="border border-success p-3 rounded-3">
+ <label>Student image:</label>
+    <input type="file" class="form-control">
+
+<br>
+<br>
+<br>
+
+<div class="form-group">
+  <label>Student Name: </label>&nbsp;
+  <input type="text" placeholder="Full Name" class="form-control" id="studentname" formControlName="studentname">
+</div>
+<br>
+<div class="form-group">
+  <label>Father's Name: </label>&nbsp;
+  <input type="text" placeholder="Father's Full Name" class="form-control" id="fathername" formControlName="fathername">
+</div>
+<br>
+<div class="form-group">
+  <label>Mother's Name:</label>
+  <input type="text" placeholder="Mother's Full Name" class="form-control" id="mothername" formControlName="mothername">
+</div>
+<br>
+<div class="form-group">
+  <label>Gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="radio" value="m" class="form-control"id="male" formControlName="gender">
+  <label>Male</label>
+  <input type="radio" value="f" class="form-control" id="female" formControlName="gender">
+  <label>Female</label>
+  <input type="radio" value="o" class="form-control" id="other" formControlName="gender">
+  <label>Other</label>
+</div>
+<br>
+<div class="form-group">
+  <label>Date of Birth: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="date" class="form-control" id="date" formControlName="date">
+</div>
+<br>
+<div class="form-group">
+  <label>Email: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="Enter your Email" id="email" class="form-control" formControlName="email">
+</div>
+<br>
+<label>Level: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<select name="" id="" formControlName="level">
+  
+  <option value="ssc">SSC</option>
+  <option value="inter">INTER</option>
+  <option value="btech">BTECH</option>
+</select>
+<br>
+<br>
+
+<label>Department: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="" id="" formControlName="department">
+  <option value="cse">CSE</option>
+  <option value="ece">ECE</option>
+  <option value="mech">MECH</option>
+  <option value="civil">CIVIL</option>
+</select>
+<br>
+<br>
+<div class="form-group">
+  <label>Tel/Mobile: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" placeholder="XXX XXX XXXX" id="mobile" class="form-control" formControlName="mobile">
+</div>
+<br>
+<br>
+<div class="form-group">
+      <button type="submit" class="form-control">Submit</button>
+  </div>
+
+    </form>
+
+
